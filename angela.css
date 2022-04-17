@@ -1,0 +1,10 @@
+.angela{
+    color:blueviolet;
+    background-color:blue;
+}
+.body{
+    background-image: url(background.jpeg);
+    background-position: center;
+    background-size: stretch;
+    background-repeat: no-repeat;
+}

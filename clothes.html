@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLOTHES</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: hotpink;
+}
+
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #000;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 30px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+      background-color: #DCDCDC;
+
+    }
+
+    td,
+    th {
+      border: 0px solid #dddddd;
+      padding: 2px;
+    }
+
+    tr:nth-child(1) {
+      
+      color: white;
+    }
+    tr:nth-child(2) {
+      
+      color: white;
+    }
+    tr:nth-child(3) {
+      
+      color: white;
+    }
+    tr:nth-child(4) {
+      
+      color: white;
+    }
+    tr:nth-child(5) {
+      
+      color: white;
+    }
+    tr:nth-child(6) {
+      
+      color: white;
+    }
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .sixty{
+      border: "none;";
+      background-color: #19bdb9;
+      color: white;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color:hotpink;
+      color: white;
+      text-align: center;
+    }
+
+    /* Dropdown Formating */
+.dropdown {
+    color: white;
+    position: relative;
+    display: inline-block;
+
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+   
+}
+
+.dropdown-content {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;b
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.0rem;
+    padding: 12px;
+    align-content: center;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.division1{
+
+  padding: 200px;
+
+}
+
+.division2{
+  padding: 200px;
+  align-items: right;
+
+}
+.divide{
+
+  position: absolute;
+  
+  text-align: center;
+}
+    
+
+
+
+  </style>
+</head>
+
+<body style="text-align:center">
+  <div class="container">
+    <header class="header">
+      <h1>CLOTHES</h1>
+      
+      <!--Navigation Menu-->
+        <nav id="navbar">
+        
+        <ul>
+          <li><a class="active" href="home.html">Home</a></li>
+            <!--<li class="item"><a href="#home">Home</a></li>-->
+            
+            <div class="dropdown">
+              <ul>
+             <li class="item"><a href="clothes.html">CLOTHES</a></li>
+                    
+            <li class="item"><a href="shoes.html">SHOES</a></li>
+            <li class="item"><a href="clothes.html">CONTACT US</li>
+            </ul>
+        </nav>
+        
+    
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <ul>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="music.html">Deliveries</a></li>
+        <li><a href="about us.html ">About Us</a></li>
+      </ul>
+      <br><br>
+      </aside>
+    <main class="content">
+
+      <!--Slide section-->
+      <div id="slider">
+
+          <div id="divide">
+
+            <table >
+
+              <tr>
+                
+                <tr>
+                  <td><li class="sixty"><h50 ><b>Dinner wear</b></h50></li></td>
+                </tr>
+
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\78d021ca655741f5ecba19a52109aecf.jpg" height="150" width="150" /></li> </td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\9db2d4632858cfabe263a4de636fbd16.jpg" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\images (2).jfif" height= "150" width= "150"/></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\588011cda381144897674ddb67d860aa.jpg" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\5e34c2eb9c70ac883e99bada23ec9f08.jpg" height="150" width="150" /></li></td>
+                
+
+              
+              </tr>
+
+              <tr>
+                <tr>
+                  <td><li class="sixty"><h51 ><b>Casual wear</b></h51></li></td>
+                </tr>
+                
+                
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\men.webp" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\woman.webp"height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\16131037_30434887_1000.webp" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\5988_06895837561076101_720.jpg.webp" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\16312845123836556191a9ed8492e9bda296a68df408c_720.jpg.webp" height="150" width="150" /><li></td>
+                
+
+              </tr>
+
+              <tr>
+
+                <tr>
+                  <td><li class="sixty"><h52 ><b>Sports wear</b></h52></li></td>
+                </tr>                
+
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\nike-sportswear-big.jpg" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\Dry-Fit-Men-s-Training-Sportswear-Set-Gym-Fitness-Compression-Sport-Suit-Jogging-Tight-Sports-Wear.jpg_Q90.jpg_.webp" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\download (2).jfif"height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\Sustainable running shoes and clothes copy.webp" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\nike-cu8374-010-nike-sportswear_1.jpg" height="150" width="150" /></li></td>
+                
+
+              </tr>
+                
+                <tr>
+
+              <tr>
+
+                <td><li class="sixty"><h53 ><b>Kid's wear</b></h53></li></td>
+              </tr>
+
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\download (1).jfif" height="150 width150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\download.jfif" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\kid.png" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\kids-baby-suit.jpg" height="150" width="150" /></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\kids.jpg" height="150" width="150" /></li></td>
+               
+
+              </tr>
+
+              <tr>
+
+                <tr>
+                  <td><li class="sixty"><h54><b>Official wear</b></h54></li></td>
+                </tr>
+
+                
+
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\ofw.jpg" height="150" width="150"/></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\a0f7aaac55f949139507abe589412b52.jpg" height="150" width="150"/></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\Two-Piece-Men-s-Formal-Pant-Suit-For-Business-Occasions-Official-Wear-Plus-Size-Navy-Blue.jpg_Q90.jpg_.webp" height="150" width="150"/></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\images (3).jfif" height="150" width="150"/></li></td>
+                <td><li class="first"><img src="C:\Users\ANGELA\Downloads\images (4).jfif" height="150" width="150"/></li></td>
+                
+
+              </tr>
+
+
+             
+            </table>
+          </div>
+          </div>
+          <div class="progress-bar"></div>
+        <!--End of slider section-->
+      <hr><br>
+      <h2>The exclusive clothline @copyright. We are located in Nairobi Westlands.</h2>
+        
+        </main>
+    <footer class="footer">Copyright &copy; 2022 : ANGELA</footer>
+  </div>
+</body>
+
+</html>
+
+
